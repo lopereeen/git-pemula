@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title> Izzak's Personal Website </title>
+		<link rel="stylesheet" href="uts.css">
+
+	</head>
+
+	<body>
+
+		<div id="menu_web">
+			<a href="pj_uts.html" class="judul"> Izzakk Profile </a>
+			<a href="pj_uts.html" class="menu"> Profil</a>
+			<a href="pj_uts.html" class="menu"> Hobi</a>
+			<a href="pj_uts.html" class="menu"> Kontak</a>
+			<a href="uts_page2.html" class="menu"> Review Buku</a>
+
+		</div>
+
+		<div id="menu_review">
+			<h1 class="review"> Review Buku!<br/></h1>
+			<p> Di website ini juga saya membagikan sedikit review buku yang sudah saya baca dan menurut saya menarik. <br/>
+			Semoga bisa menjadi referensi teman teman dalam memilih buku. Semoga bermanfaat :) </p>
+		</div>
+
+	    <div id="buku">
+	    	<p class="judulbuku"> Review Saya </p>
+		    <img src="0.png" class='gambarbuku' width=150 id="gambar"><br/>
+			<br>
+		    <a href="#" class="button" onclick=sebelum()><</a>
+
+		    <a href="#" class="button" onclick="ganti(0)">1</a>
+		    <a href="#" class="button" onclick="ganti(1)">2</a>
+		    <a href="#" class="button" onclick="ganti(2)">3</a>
+		    <a href="#" class="button" onclick="ganti(3)">4</a>
+		    
+		    <a href="#" class="button" onclick=sesudah()>></a>
+
+		    <div id="caption">--- Wizard Bakery --- Beautiful book. Cocok untuk yang suka Bliss Bakery dan keajaiban toko Kelontong Namiya. Cerita yang ringan dan penuh makna yang membuat aku terpukau di setiap halamannya. Sedih banget sama apa yang harus dilalui anak laki-laki tokoh utamanya, hidupnya sulit sejak dia kecil. But at least, dia bisa menanggung semua masalahnya. Aku seneng banget dia bisa ketemu Tukang Roti dan Burung Biru, akhirnya bisa belajar bagaimana rasanya mencintai dan dicintai oleh keluarga yang sesungguhnya. Plot twist kecil di akhir cerita membuat aku puas karena dari awal udah nebak siapa yang jahat, dan akhirnya terungkap. Novel ini diakhiri dengan dua alternatif, sehingga kita ga penasaran setelah menyelesaikan novel ini.</div>
+		    <br>
+
+		    <script>
+
+		    	var nomor = 0;
+		    	var caption = document.getElementById('caption');
+		    	var text2 = ['--- Wizard Bakery --- 	Beautiful book. Cocok untuk yang suka Bliss Bakery dan keajaiban toko Kelontong Namiya. Cerita yang ringan dan penuh makna yang membuat aku terpukau di setiap halamannya. Sedih banget sama apa yang harus dilalui anak laki-laki tokoh utamanya, hidupnya sulit sejak dia kecil. But at least, dia bisa menanggung semua masalahnya. Aku seneng banget dia bisa ketemu Tukang Roti dan Burung Biru, akhirnya bisa belajar bagaimana rasanya mencintai dan dicintai oleh keluarga yang sesungguhnya. Plot twist kecil di akhir cerita membuat aku puas karena dari awal udah nebak siapa yang jahat, dan akhirnya terungkap. Novel ini diakhiri dengan dua alternatif, sehingga kita ga penasaran setelah menyelesaikan novel ini.', 
+		    	'--- Laut Bercerita --- 	Sebagai seorang teman dan sahabat Biru Laut diceritakan sebagai sosok yang dianggap cukup pendiam oleh teman-temannya, selain itu Laut juga digambarkan sebagai orang yang selalu memberikan perhatian kepada teman-temannya, contohnya ia selalu memasak untuk teman-temannya. Seperti pertemanan pada umumnya dalam kelompok Biru Laut juga diwarnai dengan berbagai macam kecurigaan diantara mereka karena rencana berbagai rencana mereka dengan mudah diendus oleh aparat. Pada buku ini cerita berjuangan biru Laut juga dibumbui dengan kisah romansa masa muda Biru Laut dengan kekasihnya yang bernama Anjani. ',
+		    	'--- Keajaiban Toko Kelontong Namiya ---		Sejujurnya membaca novel Keajaiban Toko Kelontong Namiya ini membuat saya sedikit pusing. Konsep alur maju mundur yang dihadirkan oleh penulis memaksa otak saya untuk terus berpikir dan menghubungkan berbagai peristiwa di dalam cerita. Belum lagi dengan tema fantasi, misteri ditambah konsep time traveler semakin membuat otak saya bekerja lebih keras dari biasanya. Padahal nih, otak saya nge-lag kayak begini kalau nonton drakor genre thriller sama fantasy. Ternyata novel Keajaiban Toko Kelontong Namiya ini juga berhasil bikin saya pusing tujuh keliling. Namun, dibalik energi yang terkuras setelah membaca novel Keajaiban Toko Kelontong Namiya, novel ini juga memberikan kepuasan tersendiri bagi saya.', 
+		    	'--- Sakura Kanazawa --- 		Asli, bukunya tenang dan kalem banget. Selain itu, aku gak bisa berhenti bayangin Haruto member TREASURE saat baca Sakura Kanazawa. Tokoh Haruto benar-benar dewasa dan pinter banget, idaman pokoknya. Aku juga senang banget menikmati perkembangan karakter Aya. "Dan kuharap kamu tahu. Ada alasan Sensei menyuruhmu duduk di sampingku.""Apa itu?""Belajarlah percaya pada orang lain."Mulai dari dia yang gak bisa minta tolong, apa-apa serba sendiri, susah percaya orang lain, nganggep dirinya sebatas beban yang gak bisa apa-apa sampai jadi Aya yang kuat dan bisa percaya dengan orang lain—proses itu benar-benar keren! Mulai dari dia yang gak bisa minta tolong, apa-apa serba sendiri, susah percaya orang lain, nganggep dirinya sebatas beban yang gak bisa apa-apa sampai jadi Aya yang kuat dan bisa percaya dengan orang lain—proses itu benar-benar keren! Plot dari buku ini sederhana, tapi eksekusinya keren. Lebih dari cukup. Baca ini di tengah dunia yang berputar terlalu cepat membuat aku sebagai pembaca jadi senang dan tenang.'];
+
+		    	function ganti(angka){
+		    		nomor = angka;
+		    		var lokasi = angka + '.png';
+		    		document.getElementById('gambar').src = lokasi;
+		    		caption.innerHTML = text2[angka];
+		    		return false;
+		    	}
+
+		    	function sebelum(){
+		    		nomor = nomor - 1;
+
+		    		if(nomor < 0){
+		    			nomor = 3;
+		    		}
+
+		    		var lokasi = nomor + '.png';
+		    		document.getElementById('gambar').src = lokasi;
+		    		caption.innerHTML = text2[nomor];
+		    		return false;
+		    	}	
+		    	function sesudah(){
+		    		nomor = nomor + 1;
+
+		    		if(nomor > 3){
+		    			nomor = 0;
+		    		}
+
+		    		var lokasi = nomor + '.png';
+		    		document.getElementById('gambar').src = lokasi;
+		    		caption.innerHTML = text2[nomor];
+		    		return false;
+		    	}
+
+	    	</script>
+		</div>
+
+	   <!--  <div id="kotakbg"></div> -->
+    </body>
+</html>
